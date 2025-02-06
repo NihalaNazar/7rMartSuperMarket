@@ -40,8 +40,8 @@ public class LoginPageTest extends Base {
 	@Test(groups= {"smoke"})
 	public void verifyCorrectUsernameAndInvalidPassword() throws IOException {
 		LoginPage7rMart login = new LoginPage7rMart(driver);
-		String username = ExcelUtility.readStringData(1, 0, "LoginPage");
-		String password = ExcelUtility.readIntegerData(1, 1, "LoginPage");
+		String username = ExcelUtility.readStringData(1,0, "LoginPage");
+		String password = ExcelUtility.readIntegerData(1,1, "LoginPage");
 		login.enterUsernameOnField(username).enterPasswordOnField(password);
 		login.clickOnSignInButton();
 		boolean isAlertLoaded = login.isAlertDisplayed();
