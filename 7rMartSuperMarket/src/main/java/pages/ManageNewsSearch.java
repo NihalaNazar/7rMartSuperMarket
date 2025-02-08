@@ -15,6 +15,8 @@ public ManageNewsSearch(WebDriver driver)
 @FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")private WebElement searchclick;
 @FindBy(xpath="//input[@name='un']")private WebElement enterNews;
 @FindBy(xpath="//button[@class='btn btn-danger btn-fix']")private WebElement searchButton;
+@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+private WebElement alertMessagee;
 
 public  ManageNewsSearch clickOnSearch()
 {
@@ -29,5 +31,9 @@ public ManageNewsSearch clickOnSearchButton()
 {
 	searchButton.click();
 	return this;
+}
+public boolean isAlertMessageDisplayed() {
+	// TODO Auto-generated method stub
+	return alertMessagee.isDisplayed();
 }
 }

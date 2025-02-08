@@ -2,8 +2,10 @@ package testscript;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constant;
 import pages.HomePage;
 import pages.LoginPage7rMart;
 import pages.ManageNewsSearch;
@@ -21,7 +23,10 @@ public class ManageNewsSearchTest extends Base {
 		login.enterUsernameOnField(username).enterPasswordOnField(password);
 		home = login.clickOnSignInButton();
 		news=home.manageNewssearch();
-		news.clickOnSearch().enterNewsOnField("GOOD NEWSS").clickOnSearchButton();
+		String newsValue=ExcelUtility.readStringData(4, 0, "LoginPage");
+		news.clickOnSearch().enterNewsOnField(newsValue).clickOnSearchButton();
+		boolean alertMessage= news.isAlertMessageDisplayed();
+		Assert.assertTrue(alertMessage,Constant.ERRORMESSAGEFORUNSUCCESSFULNEWSSEARCH);
 		
   }
 }

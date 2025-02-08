@@ -35,6 +35,8 @@ public class AdminUsersPage {
 	private WebElement userSearchButton;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement alert;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement alert1;
+	
 
 	// user creation
 	public AdminUsersPage newClick() {
@@ -90,6 +92,8 @@ public class AdminUsersPage {
 
 	public boolean isAlertDisplayed() {
 		return alert.isDisplayed();
+
+
 
 	}
 

@@ -31,6 +31,8 @@ public class CategoryFileUpload {
 	private WebElement showOnLeftMenu;
 	@FindBy(xpath = "//button[@class='btn btn=danger']")
 	private WebElement saveButton;
+	@FindBy(xpath="//a[@class='btn btn-sm btn btn-danger btncss']")
+	private WebElement deleteButton;
 
 	public CategoryFileUpload ListNewCategory() {
 		clickNew.click();
@@ -65,4 +67,18 @@ public class CategoryFileUpload {
 		return this;
 	}
 
-}
+	public CategoryFileUpload clickOnDeleteButton() {
+		
+		deleteButton.click();
+		return this;
+	}
+
+	public boolean isDeleteSuccessfulMessageDisplayed() {
+		// TODO Auto-generated method stub
+		return deleteButton.isDisplayed();
+	}
+
+	
+	}
+
+

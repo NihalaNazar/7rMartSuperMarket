@@ -8,16 +8,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscript.LoginPageTest">
+      <class name="testscript.ManageProductsTest">
         <methods>
-          <include name="verifyCorrectUsernameAndPassword"/>
           <include name="beforeMethod"/>
-          <include name="verifyInvalidUsernameAndCorrectPassword"/>
+          <include name="verifyValidProductSearch"/>
           <include name="afterMethod"/>
-          <include name="verifyCorrectUsernameAndInvalidPassword"/>
-          <include name="verifyInvalidUsernameAndPassword"/>
         </methods>
-      </class> <!-- testscript.LoginPageTest -->
+      </class> <!-- testscript.ManageProductsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

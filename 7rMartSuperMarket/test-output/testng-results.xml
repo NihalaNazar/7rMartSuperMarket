@@ -2,25 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-06T18:24:10 IST" name="Default suite" finished-at="2025-02-06T18:24:11 IST" duration-ms="70">
+  <suite started-at="2025-02-07T19:53:07 IST" name="Suite" finished-at="2025-02-07T19:53:08 IST" duration-ms="126">
     <groups>
-      <group name="smoke">
-        <method signature="LoginPageTest.verifyCorrectUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginPageTest@7c7b252e]" name="verifyCorrectUsernameAndInvalidPassword" class="testscript.LoginPageTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-02-06T18:24:10 IST" name="Default test" finished-at="2025-02-06T18:24:11 IST" duration-ms="70">
-      <class name="testscript.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPageTest@7c7b252e]" started-at="2025-02-06T18:24:10 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1738846450971" status="FAIL">
+    <test started-at="2025-02-07T19:53:07 IST" name="Test" finished-at="2025-02-07T19:53:08 IST" duration-ms="126">
+      <class name="testscript.ManageProductsTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.ManageProductsTest@7b4c50bc]" started-at="2025-02-07T19:53:08 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1738938188017" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
-in C:\Users\nihal\AppData\Local\Temp\testng-eclipse--690493242\testng-customsuite.xml]]>
+in C:\Users\nihal\git\7rMartSuperMarket\7rMartSuperMarket\extendreport.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
-in C:\Users\nihal\AppData\Local\Temp\testng-eclipse--690493242\testng-customsuite.xml
+in C:\Users\nihal\git\7rMartSuperMarket\7rMartSuperMarket\extendreport.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -56,17 +53,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyCorrectUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginPageTest@7c7b252e]" started-at="2025-02-06T18:24:10 IST" name="verifyCorrectUsernameAndInvalidPassword" finished-at="2025-02-06T18:24:10 IST" duration-ms="1" status="SKIP">
+        <test-method signature="verifyValidProductSearch()[pri:0, instance:testscript.ManageProductsTest@7b4c50bc]" started-at="2025-02-07T19:53:08 IST" name="verifyValidProductSearch" finished-at="2025-02-07T19:53:08 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
-in C:\Users\nihal\AppData\Local\Temp\testng-eclipse--690493242\testng-customsuite.xml]]>
+in C:\Users\nihal\git\7rMartSuperMarket\7rMartSuperMarket\extendreport.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browzer' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
-in C:\Users\nihal\AppData\Local\Temp\testng-eclipse--690493242\testng-customsuite.xml
+in C:\Users\nihal\git\7rMartSuperMarket\7rMartSuperMarket\extendreport.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -101,12 +98,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCorrectUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@7c7b252e]" started-at="2025-02-06T18:24:10 IST" name="afterMethod" finished-at="2025-02-06T18:24:10 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyValidProductSearch -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.ManageProductsTest@7b4c50bc]" started-at="2025-02-07T19:53:08 IST" name="afterMethod" finished-at="2025-02-07T19:53:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testscript.ManageProductsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
