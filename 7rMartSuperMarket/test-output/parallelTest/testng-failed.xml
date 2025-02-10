@@ -8,14 +8,18 @@
     <classes>
       <class name="testscript.LoginPageTest">
         <methods>
-          <include name="verifyCorrectUsernameAndPassword"/>
           <include name="beforeMethod"/>
-          <include name="verifyInvalidUsernameAndCorrectPassword"/>
           <include name="afterMethod"/>
           <include name="verifyCorrectUsernameAndInvalidPassword"/>
-          <include name="verifyInvalidUsernameAndPassword"/>
         </methods>
       </class> <!-- testscript.LoginPageTest -->
+      <class name="testscript.ManageNewsTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyUserIsAbleToCreateNews"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testscript.ManageNewsTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [parallelTest] -->

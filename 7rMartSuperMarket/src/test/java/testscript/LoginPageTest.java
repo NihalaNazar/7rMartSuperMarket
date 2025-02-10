@@ -8,6 +8,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import constants.Constant;
+import freemarker.template.utility.Constants;
 import pages.HomePage;
 import pages.LoginPage7rMart;
 import utilities.ExcelUtility;
@@ -45,18 +46,18 @@ public class LoginPageTest extends Base {
 		login.enterUsernameOnField(username).enterPasswordOnField(password);
 		login.clickOnSignInButton();
 		boolean isAlertLoaded = login.isAlertDisplayed();
-		Assert.assertTrue(isAlertLoaded, "login failed");
+		Assert.assertTrue(isAlertLoaded, Constant.ERRORMESSAGEFORLOGIN);
 
 	}
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void verifyInvalidUsernameAndPassword() {
 		LoginPage7rMart login = new LoginPage7rMart(driver);
 		login.enterUsernameOnField("adminss").enterPasswordOnField("123");
 		login.clickOnSignInButton();
 		String expected = "Login | 7rmart supermarket";
 		String actual = driver.getTitle();
-		Assert.assertEquals(expected, actual, "login failed");
+		Assert.assertEquals(expected, actual, Constant.ERRORMESSAGEFORLOGIN);
 
 	}
 

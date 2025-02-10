@@ -10,6 +10,7 @@ import utilities.PageUtility;
 
 public class ManageProductsPage {
 	public WebDriver driver;
+	PageUtility pageutility=new PageUtility();
 
 	public ManageProductsPage(WebDriver driver) {
 		this.driver = driver;
@@ -50,14 +51,16 @@ public class ManageProductsPage {
 
 	public ManageProductsPage selectCategoryDropdown() {
 
-		Select select = new Select(categoryDropDown);
-		select.selectByIndex(2);
+		//Select select = new Select(categoryDropDown);
+		//select.selectByIndex(2);
+		pageutility.SelectByDrop(categoryDropDown, "2");
 		return this;
 	}
 
 	public ManageProductsPage selectSubcategoryDropDown() {
-		Select select1 = new Select(subcategory);
-		select1.selectByIndex(2);
+		//Select select1 = new Select(subcategory);
+		//select1.selectByIndex(2);
+		pageutility.subCategorySelect(categoryDropDown, "2");
 		return this;
 	}
 

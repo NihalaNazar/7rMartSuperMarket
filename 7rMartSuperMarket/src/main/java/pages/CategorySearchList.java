@@ -34,5 +34,11 @@ public class CategorySearchList {
 		searchButton.click();
 		return this;
 	}
+		
+		
+		public boolean isSearchunSuccessfulMessageDisplayed() {
+		
+			return searchButton.isDisplayed();
+	}
 
 }

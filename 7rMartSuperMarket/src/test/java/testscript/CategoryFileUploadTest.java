@@ -29,6 +29,7 @@ public class CategoryFileUploadTest extends Base {
 		category.ListNewCategory().EnterTheCategory("Biscuitss");
 		category.selectshowOnTopMenu().selectshowOnLeftMenu().clickSave();
 		
+		
 	}
 	@Test
 	public void verifyUserIsAbleToDeleteCategory()throws IOException

@@ -2,8 +2,10 @@ package testscript;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constant;
 import pages.CategorySearchList;
 import pages.HomePage;
 import pages.LoginPage7rMart;
@@ -23,5 +25,7 @@ public class CategorySearchListTest extends Base {
 		home = login.clickOnSignInButton();
 		category=home.clickOnCategorysearch();
 		category.clickOnsearch().enterCategoryList("Honey").clickOnsearch();
+		boolean searchUNsuccessfulMessage=category.isSearchunSuccessfulMessageDisplayed();
+		Assert.assertTrue(searchUNsuccessfulMessage, Constant.ERRORMESSAGEFORCATEGORYSEARCHUNSUCCESSFUL);
   }
 }

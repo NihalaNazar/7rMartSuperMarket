@@ -11,7 +11,7 @@
       <class name="testscript.LoginPageTest">
       
 		</class>
-		<class name="testscript.AdminUserTest"></class>
+		<class name="testscript.ManageNewsTest"></class>
     </classes>
   </test> <!-- TestNG.xml -->
 </suite> <!-- Suite -->

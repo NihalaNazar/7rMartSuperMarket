@@ -18,7 +18,7 @@ public class AdminUserTest extends Base {
 	FakerUtility faker = new FakerUtility();
 
 	@Test
-	public void newAdminUserCreation() throws IOException {
+	public void verifynewAdminUserCreation() throws IOException {
 		LoginPage7rMart login = new LoginPage7rMart(driver);
 		String username=ExcelUtility.readStringData(3, 0,"LoginPage");
 		String password=ExcelUtility.readStringData(3, 1, "LoginPage");
@@ -34,15 +34,18 @@ public class AdminUserTest extends Base {
 	}
 
 	@Test
-	public void searchUser() throws IOException {
+	public void verifyValidSearchUser() throws IOException {
 		LoginPage7rMart login = new LoginPage7rMart(driver);
 		String username=ExcelUtility.readStringData(3, 0,"LoginPage");
 		String password=ExcelUtility.readStringData(3, 1, "LoginPage");
 		login.enterUsernameOnField(username).enterPasswordOnField(password);
 		home = login.clickOnSignInButton();
 		admin = home.adminsUserClick();
+		String UsernameCategory=ExcelUtility.readStringData(1, 0, "CategoryPage");
 		admin.clickOnSearchButton().enterNameOnSearchNameField("Nihala").selectUsertypeDropDown()
 				.clickOnUserSearchButton();
+		boolean alertMessage=admin.isAlertDisplayed();
+		Assert.assertTrue(alertMessage, Constant.ERRORMESSAGEFORINVALIDUSERSEARCH );
 
 	}
 }

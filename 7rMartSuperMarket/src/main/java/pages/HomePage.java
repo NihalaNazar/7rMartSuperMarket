@@ -61,13 +61,8 @@ public class HomePage {
 		return new ManageProductsPage(driver);
 	}
 
-	public AdminLogout logoutclick() {
-
-		logoutclick.click();
-		clickonlogoutbutton.click();
-		return new AdminLogout(driver);
-
-	}
+	
+	
 
 	public CategoryFileUpload categoryclick() {
 		categoryclick.click();
@@ -89,4 +84,15 @@ public class HomePage {
 		categoryListClick.click();
 		return new CategorySearchList(driver);
 	}
+	public HomePage logout() {
+		logoutclick.click();
+		clickonlogoutbutton.click();
+		return this;
+	}
+
+	
+		
+	
+
 }
+

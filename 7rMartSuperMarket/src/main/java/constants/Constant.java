@@ -15,4 +15,9 @@ public class Constant {
 	public static final String ERRORMESSAGEFORUNSUCCESSFULNEWS = "news creation is unsuccessful";
 	public static final String ERRORMESSAGEFORINVALIDPRODUCTSEARCH="search not found";
 public static final String ERRORMESSAGEFORUNSUCCESSFULNEWSSEARCH="news search is unsuccessful";
+public static final String ERRORMESSAGEFORINVALIDSUBCATEGORYSEARCH="invalid subcategory search";
+public static final String ERRORMESSAGEFORCATEGORYSEARCHUNSUCCESSFUL="category search is unsuccessful";
+
+
+
 }
